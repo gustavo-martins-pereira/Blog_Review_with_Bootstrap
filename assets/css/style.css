@@ -1,0 +1,62 @@
+/*============================== Imports ==================================== */
+/* FONTS */
+
+/*============================== Configurations ==============================*/
+:root {
+    /*=============== COLORS ===============*/
+    --gray-color: hsl(0, 0%, 50%);
+    --yellow-color: hsl(47, 88%, 63%);
+
+    /*=============== BACKGROUNDS ===============*/
+    --body-color: var(--yellow-color);
+    --card-tag: var(--yellow-color);
+
+    /*=============== BORDERS ===============*/
+
+
+    /*=============== TEXT COLORS ===============*/
+    --plain-text: var(--gray-color);
+    --card-title--hover: var(--yellow-color);
+
+    /*=============== FONTS ===============*/
+    --default-font: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/*============================== GENERIC ELEMENTS ==============================*/
+body {
+    background-color: var(--body-color);
+
+    min-height: 100vh;
+
+    font-family: var(--default-font);
+}
+
+p {
+    color: var(--plain-text);
+}
+
+/*============================== GENERIC CLASSES ==============================*/
+
+
+/*============================== PAGE - TOP TO BOTTOM ==============================*/
+.main-card {
+    max-width: 25rem;
+
+    box-shadow: 12px 12px 0 black;
+}
+
+    .main-card__tag {
+        background-color: var(--card-tag);
+
+        width: fit-content;
+    }
+
+    .main-card__title:hover {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--card-title--hover);
+        }
+    }
+
+/*=============== RESPONSIVE LAYOUTS ===============*/
